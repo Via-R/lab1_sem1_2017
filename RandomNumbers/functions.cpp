@@ -6,17 +6,14 @@ using namespace std;
 unsigned int x = 42;
 unsigned int y = 8;
 
-int a = -3;
-int b = 3;
-int parts = 4;
+int a = 1;
+int b = 100;
+int parts = 1;
 
 void analyze(FP f, unsigned int iterations, int type) {
 	streamsize ss = cout.precision();
 	const int size = (b - a) * parts;
 	int * result = new int[size]();
-	
-	double min = 999;
-	double max = -999;
 
 	int temp;
 	if (type == 0)
@@ -32,6 +29,9 @@ void analyze(FP f, unsigned int iterations, int type) {
 				result[temp]++;
 			}
 		}
+	else
+		for (int i = 0; i < iterations; i++)
+			cout << f() << endl;//result[(int)(f())]++;
 
 	double from, to;
 	from = (double)a;

@@ -142,6 +142,7 @@
     <ClCompile Include="functions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="method1.cpp" />
+    <ClCompile Include="method10.cpp" />
     <ClCompile Include="method2.cpp" />
     <ClCompile Include="method3.cpp" />
     <ClCompile Include="method4.cpp" />
@@ -149,6 +150,7 @@
     <ClCompile Include="method6.cpp" />
     <ClCompile Include="method7.cpp" />
     <ClCompile Include="method8.cpp" />
+    <ClCompile Include="method9.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h" />

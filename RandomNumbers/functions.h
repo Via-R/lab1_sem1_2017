@@ -33,11 +33,11 @@ double method7();
 //Correlative
 double method8();
 
-//
-//unsigned int method9();
+//Logarithm method
+double method9();
 
-//
-//unsigned int method10();
+//Gamma
+double method10();
 
 //template <typename T>
 void analyze(FP, unsigned int, int);
