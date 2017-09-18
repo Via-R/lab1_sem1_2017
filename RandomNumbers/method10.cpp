@@ -17,3 +17,4 @@ double method10() {
 	
 	return x10;
 }
+
