@@ -9,7 +9,7 @@ int main() {
 	
 	const FP ar[10] = { &get1, &get2, &get3, &get4, &get5, &method6, &method7, &method8, &method9, &method10 };
 
-	cout << "Generators of pseudo random numbers\n\n1: Linear congruential\n2: Quadratic congruential\n3: Fibonacci\n4: Inverse congruential\n5: Associative\n\nPlese enter number of method you'd like to try: ";
+	cout << "Generators of pseudo random numbers\n\n1: Linear congruential\n2: Quadratic congruential\n3: Fibonacci\n4: Inverse congruential\n5: Associative\n6: 3 sigmas\n7: Polar coordinates\n8: Correlative\n9: Logarithmic\n10: Ahrens' gamma distribution\n\nPlese enter number of method you'd like to try: ";
 	cin >> choice;
 	if (cin.fail() || choice < 1 || choice > 10) {
 		cin.clear();
@@ -22,7 +22,7 @@ int main() {
 		else if (choice < 9)
 			analyze(ar[choice - 1], 10000, 1);
 		else
-			analyze(ar[choice - 1], 100, 2);
+			analyze(ar[choice - 1], 10000, 2);
 	}
 	system("pause");
 	return 0;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include "functions.h"
-//Comment
+
 using namespace std;
 unsigned int x = 42;
 unsigned int y = 8;
@@ -11,6 +11,21 @@ int b = 100;
 int parts = 1;
 
 void analyze(FP f, unsigned int iterations, int type) {
+	if (type == 0) {
+		a = 0;
+		b = 1;
+		parts = 10;
+	}
+	else if (type == 1) {
+		a = -3;
+		b = 3;
+		parts = 4;
+	}
+	else {
+		a = 1;
+		b = 100;
+		parts = 1;
+	}
 	streamsize ss = cout.precision();
 	const int size = (b - a) * parts;
 	int * result = new int[size]();
@@ -30,8 +45,12 @@ void analyze(FP f, unsigned int iterations, int type) {
 			}
 		}
 	else
-		for (int i = 0; i < iterations; i++)
-			cout << f() << endl;//result[(int)(f())]++;
+		for (int i = 0; i < iterations; i++) {
+			int temp = (int)f();
+			if (temp >= size || temp < 0)
+				continue;
+			result[temp]++;
+		}
 
 	double from, to;
 	from = (double)a;
@@ -45,6 +64,3 @@ void analyze(FP f, unsigned int iterations, int type) {
 		from = to;
 	}
 }
-
-//cout << f()*(b-a) + a << endl;
-//cout << f() << endl;
