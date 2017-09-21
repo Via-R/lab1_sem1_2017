@@ -24,6 +24,8 @@ int main() {
 		else
 			analyze(ar[choice - 1], 10000, 2);
 	}
+	else
+		cout << "Wrong number entered\n";
 	system("pause");
 	return 0;
 }
