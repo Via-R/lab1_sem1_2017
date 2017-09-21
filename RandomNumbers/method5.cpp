@@ -7,7 +7,7 @@ unsigned int y5 = time(0) / 2;
 unsigned int method5() {
 	x5 = method4();
 	y5 = method1();
-	return (unsigned int)(x5 - y5) % m;
+	return (unsigned int)(x5 + m - y5) % m;
 }
 
 double get5() {

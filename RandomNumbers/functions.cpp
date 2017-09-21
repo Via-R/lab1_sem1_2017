@@ -54,6 +54,7 @@ void analyze(FP f, unsigned int iterations, int type) {
 
 	double from, to;
 	from = (double)a;
+	double summary = 0.0;
 	for (int i = 0; i < size; i++) {
 		char segmentEnd = i + 1 == size ? ']' : ')';
 		to = 1. / parts + from;
@@ -61,6 +62,9 @@ void analyze(FP f, unsigned int iterations, int type) {
 		cout.unsetf(std::ios_base::floatfield);
 		cout.precision(ss);
 		cout << *(result + i) / (double)iterations * 100 << "\t%" << endl;
+		summary += *(result + i) / (double)iterations * 100;
 		from = to;
 	}
+	cout << summary << endl;
+
 }

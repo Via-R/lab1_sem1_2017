@@ -1,10 +1,10 @@
 #include "functions.h"
 #include <ctime>
 
-unsigned int x2 = time(0);
+unsigned long long x2 = time(0);
 
 unsigned int method2() {
-	x2 = (987 * x2 * x2 + 1597 * x2 + 45989) % m;
+	x2 = (7 * x2 * x2 + 5 * x2 + 17) % m;
 	return x2;
 }
 
