@@ -22,7 +22,7 @@ void analyze(FP f, unsigned int iterations, int type) {
 		parts = 4;
 	}
 	else {
-		a = 1;
+		a = 0;
 		b = 100;
 		parts = 1;
 	}
