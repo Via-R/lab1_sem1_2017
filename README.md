@@ -1,5 +1,7 @@
 # Generators of pseudo-random numbers
 
+![Screenshot of the main console menu](screen.png)
+
 This labwork implements 10 different generators of pseudo-random numbers that correspond to 3 different distributions:
 
  1. Linear congruential
